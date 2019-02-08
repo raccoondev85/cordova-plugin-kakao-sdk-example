@@ -2,22 +2,7 @@
 Ionic 3 Kakao Cordova SDK Plugin example 예제 
 
 
-*Kakao Official Documents
-
-**Android:  
-  - Login: https://developers.kakao.com/docs/android/user-management
-  - Link: https://developers.kakao.com/docs/android/kakaotalk-link
-  - Talk: https://developers.kakao.com/docs/android/kakaotalk-api
-  - PlusFriend: https://developers.kakao.com/docs/android/plusfriend
-  
-**iOS:  
-  - Login: https://developers.kakao.com/docs/ios/user-management
-  - Link: https://developers.kakao.com/docs/ios/kakaotalk-link
-  - Talk: https://developers.kakao.com/docs/ios/kakaotalk-api
-  - PlusFriend: https://developers.kakao.com/docs/ios/plusfriend
-
-
-## Development Environment and ETC
+## Environment
 |type|version
 |---|---
 |ionic (Ionic CLI)|3.19.1
