@@ -15,7 +15,7 @@ Ionic 3 Kakao Cordova SDK Plugin example 예제
 
 ## How to install
 ```
-// replace to your KAKAO_APP_KEY in config.xml
+// replace KAKAO_APP_KEY to yours in config.xml
     <plugin name="cordova-plugin-kakao-sdk" spec="^3.0.0">
         <variable name="KAKAO_APP_KEY" value="HERE TO BE CHANGED" />
     </plugin>
