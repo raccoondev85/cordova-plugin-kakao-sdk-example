@@ -1,0 +1,7 @@
+{
+  "name": "KakaoNaverSDKExample",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
