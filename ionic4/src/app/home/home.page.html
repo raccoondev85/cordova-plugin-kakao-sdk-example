@@ -1,0 +1,123 @@
+<ion-header>
+
+  <ion-toolbar>
+
+    <ion-title>KAKAO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content no-padding>
+  <div>
+    <ion-list>
+      <ion-list-header>
+        카카오 사용자 관리
+      </ion-list-header>
+
+      <ion-item (click)="login()">
+        <ion-label>로그인(login)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="logout()">
+        <ion-label>로그아웃(logout)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="unlinkApp()">
+        <ion-label>앱 연결 해제(unlinkApp)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="requestMe()">
+        <ion-label>사용자 정보 요청(requestMe)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="getAccessToken()">
+        <ion-label>토큰 정보 얻기(getAccessToken)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="checkScopeStatus()">
+        <ion-label>동의사항 체크(checkScopeStatus)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="updateScopes()">
+        <ion-label>동적 동의(updateScopes)</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header>
+        카카오톡
+      </ion-list-header>
+
+      <ion-item ion-item (click)="requestSendMemo()">
+        <ion-label>나에게 보내기(requestSendMemo)</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header>
+        카카오플러스친구
+      </ion-list-header>
+
+      <ion-item ion-item (click)="addPlusFriend()">
+        <ion-label>플러스친구 추가(addPlusFriend)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="chatPlusFriend()">
+        <ion-label>플러스친구 채팅(chatPlusFriend)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="chatPlusFriendUrl()">
+        <ion-label>플러스친구 url(chatPlusFriendUrl)</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header>
+        카카오 링크
+      </ion-list-header>
+
+      <ion-item ion-item (click)="sendLinkFeed()">
+        <ion-label>기본 템플릿(sendFeedTemplate)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="sendLinkList()">
+        <ion-label>기본 리스트 템플릿(sendListTemplate)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="sendLinkLocation()">
+        <ion-label>장소 템플릿(sendLocationTemplate)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="sendLinkCommerce()">
+        <ion-label>커머스 템플릿(sendCommerceTemplate)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="sendLinkText()">
+        <ion-label>텍스트 템플릿(sendTextTemplate)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="sendLinkScrap()">
+        <ion-label>스크랩 템플릿(sendScrapTemplate)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="sendLinkCustom()">
+        <ion-label>커스텀 템플릿(sendCustomTemplate)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="uploadImage()">
+        <ion-label>이미지 업로드(uploadImage)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="uploadImage('url','http://mud-kage.kakao.co.kr/dn/RY8ZN/btqgOGzITp3/uCM1x2xu7GNfr7NS9QvEs0/kakaolink40_original.png')">
+        <ion-label>이미지 스크랩(uploadScrap)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="deleteUploadedImage()">
+        <ion-label>이미지 지우기(deleteUploadedImage)</ion-label>
+      </ion-item>
+      <ion-item ion-item (click)="postStory()">
+        <ion-label>카카오스토리 글쓰기(postStory)</ion-label>
+      </ion-item>
+
+
+    </ion-list>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-list>
+    <ion-list-header color="clight">
+      결과(Response)
+    </ion-list-header>
+
+    <ion-item text-wrap>
+
+      <div class="copy-text" style="width:100%;height:100px;overflow:scroll" [innerHTML]="message"></div>
+
+    </ion-item>
+
+  </ion-list>
+</ion-footer>
